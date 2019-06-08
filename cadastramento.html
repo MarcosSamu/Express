@@ -26,20 +26,31 @@
     <form class="ui large form" post="">
       <div class="ui stacked segment">
         <div class="field">
-          <label>Seu email</label>
+          <label>Email</label>
           <div class="ui left icon input">
             <i class="wheelchair icon"></i>
             <input type="text" name="email" placeholder="E-mail address">
           </div>
         </div>
         <div class="field">
-          <label>Sua senha</label>
+          <label>Senha</label>
           <div class="ui left icon input">
             <i class="lock icon"></i>
-            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="password" id="sen1" placeholder="Sua senha">            
           </div>
         </div>
-        <div class="ui fluid large teal submit button">Avançar</div>
+        <div class="field">
+          <label>Repita a senha</label>
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input type="password" name="password" id="sen1" placeholder="Sua senha">            
+          </div>
+        </div>
+         <div class="field">
+            <label>Usuário</label>
+            <input type="text" name="usuario" placeholder="Usuário" required="">
+        </div>
+        <div class="ui fluid large teal submit button" onclick="validation()">Cadastrar</div>
       </div>
 
       <div class="ui error message"></div>
@@ -47,9 +58,8 @@
     </form>
 
     <div class="ui message">
-     Não tem conta ? <a href="cadastramento.html">Cadastrar</a>
+      Já tem conta ? <a href="TopicosSpecial.html">Login</a>
     </div>
-
   </div>
 </div>
 </body>
